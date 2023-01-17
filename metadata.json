@@ -1,0 +1,26 @@
+{
+    "Identifier": "eos3b5e",
+    "Slug": "molecular-weight",
+    "Status": "Ready",
+    "Title": "Molecular weight",
+    "Description": "The model is simply an implementation of the function Descriptors.MolWt of the chemoinformatics package RDKIT. It takes as input a small molecule (SMILES) and calculates its molecular weight in g/mol.\n",
+    "Mode": "Pretrained",
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Task": [
+        "Regression"
+    ],
+    "Output": [
+        "Other value"
+    ],
+    "Interpretation": "Calculated molecular weight (g/mol)",
+    "Tag": [
+        "Molecular weight"
+    ],
+    "Publication": "https://www.rdkit.org/docs/RDKit_Book.html",
+    "Source": "https://github.com/rdkit/rdkit",
+    "License": "BSD-3",
+    "Contributor": "miquelduranfrigola"
+}
