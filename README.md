@@ -1,24 +1,27 @@
-# Molecular-weight
+# Molecular weight
 
-## Model Identifiers
-- Slug: molecular-weight
-- Ersilia ID: eos3b5e
-- Tags: MW,	physchem,	descriptor
+The model is simply an implementation of the function Descriptors.MolWt of the chemoinformatics package RDKIT. It takes as input a small molecule (SMILES) and calculates its molecular weight in g/mol.
 
-## Model Description 
-Calculate the molecular weight of a small molecule 
-- Input: SMILES 
-- Output: Molecular weight (g/mol)
-- Model type: Regression 
-- Mode of training: Pretrained
-- Experimentally validated: No 
+## Identifiers
 
-## Source code 
-This model is published by Greg Landrum et al. The RDKit Book (2007-2014) at https://www.rdkit.org/docs/RDKit_Book.html#morganfp
-- Code: https://github.com/rdkit/rdkit
+* EOS model ID: eos3b5e
+* Slug: molecular-weight
 
-## License
-The GPL-v3 license applies to all parts of the repository that are not externally maintained libraries. This repository uses the externally maintained library "rdkit", located at `/src` and licensed under a BSD-3 License
+## Characteristics
 
-## History
-- Model was downloaded and incorporated on September 13, 2021
+* Input: Compound
+* Input shape: Single
+* Task: Regression
+* Output: Other value
+* Interpretation: Calculated molecular weight (g/mol)
+
+## References
+
+* [Publication](https://www.rdkit.org/docs/RDKit_Book.html)
+* [Source](https://github.com/rdkit/rdkit)
+* Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+[Help us](https://www.ersilia.io/donate) achieve our mission!
