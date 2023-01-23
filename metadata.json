@@ -15,12 +15,16 @@
     "Output": [
         "Other value"
     ],
+    "Output Type": [
+        "Float"
+    ],
+    "Output Shape": "Single",
     "Interpretation": "Calculated molecular weight (g/mol)",
     "Tag": [
         "Molecular weight"
     ],
     "Publication": "https://www.rdkit.org/docs/RDKit_Book.html",
-    "Source": "https://github.com/rdkit/rdkit",
-    "License": "BSD-3",
+    "Source Code": "https://github.com/rdkit/rdkit",
+    "License": "BSD-3.0",
     "Contributor": "miquelduranfrigola"
 }
