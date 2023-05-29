@@ -14,7 +14,7 @@ from bentoml.types import JsonSerializable
 @artifacts([JSONArtifact("model")])
 class Service(BentoService):
     @api(input=JsonInput(), batch=True)
-    def calculate(self, input: List[JsonSerializable]):
+    def run(self, input: List[JsonSerializable]):
         """
         Calculate molecular weight
         """
