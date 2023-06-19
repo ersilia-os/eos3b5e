@@ -1,12 +1,12 @@
 name: Upload model to DockerHub
 on:
   workflow_dispatch:
-
+  
   workflow_run:
     workflows: ["Model Test on push"]
     types:
       - completed
-
+  
 jobs:
   upload_model_to_dockerhub:
     if: github.repository != 'ersilia-os/eos-template'
@@ -15,12 +15,12 @@ jobs:
       # https://github.com/docker/setup-qemu-action
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
-
+      
       # https://github.com/docker/setup-buildx-action
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v1
-
+    
       # log in to dockerhub
       - name: Login to Docker Hub
         if: github.event_name != 'pull_request'
@@ -28,13 +28,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-
+          
       - name: Checkout persist credentials
         uses: actions/checkout@master
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-
+          
       - name: Generate the Dockerfile
         id: generate-dockerfile
         env:
@@ -44,35 +44,28 @@ jobs:
           python -m pip install requests
           python place_a_dockerfile_in_current_eos_repo.py $REPO_NAME
                                           
-      - name: Build and push (amd64)
-        id: build-amd64
+      - name: Build and push
+        id: build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ersiliaos/${{ github.event.repository.name }}:latest
+
+      - name: Check build status
+        if: ${{ job.status != 'success' && job.outputs.build }}
+        run: echo "::set-output name=build-failed::true"
+
+      - name: Build only for Linux/amd64
+        if: steps.build.outputs.build-failed
         uses: docker/build-push-action@v2
         with:
           context: .
           platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ersiliaos/${{ github.event.repository.name }}:latest
-
-      - name: Check AMD64 Build
-        if: always()
-        run: echo "AMD64 build status:" "${{ steps.build-amd64.outcome }}"
-
-
-      - name: Build and push (arm64)
-        id: build-arm64
-        if: always()
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          platforms: linux/arm64
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ersiliaos/${{ github.event.repository.name }}:latest
-
-      - name: Check ARM64 Build
-        if: always()
-        run: echo "ARM64 build status:" "${{ steps.build-arm64.outcome }}"
-
-
+          
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
         with:
