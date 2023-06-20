@@ -23,6 +23,11 @@ The model is simply an implementation of the function Descriptors.MolWt of the c
 * [Source Code](https://github.com/rdkit/rdkit)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos3b5e)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos3b5e) (AMD64, ARM64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://www.rdkit.org/docs/RDKit_Book.html) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
