@@ -13,7 +13,7 @@ output_file = sys.argv[2]
 root = os.path.dirname(os.path.abspath(__file__))
 
 # my model
-def my_model(smiles_list):
+def molweight(smiles_list):
     return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
 
 
@@ -24,7 +24,7 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 # run model
-outputs = my_model(smiles_list)
+outputs = molweight(smiles_list)
 
 #check input and output have the same length
 input_len = len(smiles_list)
