@@ -10,5 +10,5 @@ mdl = load_model(
 )
 
 service = Service()
-service.pack("model", None)
+service.pack("model", mdl)
 service.save()
