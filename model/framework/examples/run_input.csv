@@ -1,4 +1,4 @@
 smiles
-Nc1cccc(c1)-c1cc2c(Oc3cccc(O)c3)ncnc2[nH]1
-C1=CN=CC=C1C(=O)NN
-CC(CN1C=NC2=C(N=CN=C21)N)OCP(=O)(O)O
+OC(COc1cccc2oc(cc(=O)c12)C(O)=O)COc1cccc2oc(cc(=O)c12)C(O)=O
+CC(C)c1ccc2n(Cc3ccc(Cl)cc3)c(CC(C)(C)C(O)=O)c(SC(C)(C)C)c2c1
+NCC(O)c1ccc(O)cc1
