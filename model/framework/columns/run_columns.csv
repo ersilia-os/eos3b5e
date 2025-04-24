@@ -1,2 +1,2 @@
 name,type,direction,description
-mol_weight,float,intermediate,The calculated molecular weight of the molecule in g/mol
+mol_weight,float,high,The calculated molecular weight of the molecule in g/mol
