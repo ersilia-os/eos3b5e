@@ -35,13 +35,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3b5e](https://hub.docker.com/r/ersiliaos/eos3b5e)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `437`
+- **Image Size (Mb):** `392.85`
 
+**Computational Performance (seconds):**
+- 4 inputs: `29.44`
+- 20 inputs: `19.29`
+- 100 inputs: `19.34`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit](https://github.com/rdkit/rdkit)
