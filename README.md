@@ -43,6 +43,10 @@ Below are the **Output Columns** of the model:
 - **Environment Size (Mb):** `438`
 - **Image Size (Mb):** `393.01`
 
+**Computational Performance (seconds):**
+- 10 inputs: `29.17`
+- 100 inputs: `18.97`
+- 10000 inputs: `200.03`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit](https://github.com/rdkit/rdkit)
