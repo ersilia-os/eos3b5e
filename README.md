@@ -4,6 +4,7 @@ The model is simply an implementation of the function Descriptors.MolWt of the c
 
 This model was incorporated on 2021-09-13.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos3b5e`
@@ -13,7 +14,7 @@ This model was incorporated on 2021-09-13.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Molecular weight`
 
 ### Input
