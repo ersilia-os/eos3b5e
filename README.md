@@ -2,7 +2,7 @@
 
 The model is simply an implementation of the function Descriptors.MolWt of the chemoinformatics package RDKIT. It takes as input a small molecule (SMILES) and calculates its molecular weight in g/mol.
 
-This model was incorporated on 2021-09-13.Last packaged on 2025-07-16.
+This model was incorporated on 2021-09-13.Last packaged on 2025-08-24.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `455`
-- **Image Size (Mb):** `397.3`
+- **Image Size (Mb):** `476.93`
 
 **Computational Performance (seconds):**
-- 10 inputs: `26.1`
-- 100 inputs: `16.23`
-- 10000 inputs: `27.19`
+- 10 inputs: `26.63`
+- 100 inputs: `16.34`
+- 10000 inputs: `27.47`
 
 ### References
 - **Source Code**: [https://github.com/rdkit/rdkit](https://github.com/rdkit/rdkit)
