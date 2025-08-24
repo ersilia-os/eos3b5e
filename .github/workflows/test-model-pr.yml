@@ -12,3 +12,4 @@ jobs:
     with:
       branch: "main"
       repo_name: ${{ github.event.repository.name }}
+      runner: ubuntu-latest
