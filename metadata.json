@@ -1,0 +1,56 @@
+{
+    "Identifier": "eos3b5e",
+    "Slug": "molecular-weight",
+    "Status": "Ready",
+    "Title": "Molecular weight",
+    "Description": "The model is simply an implementation of the function Descriptors.MolWt of the chemoinformatics package RDKIT. It takes as input a small molecule (SMILES) and calculates its molecular weight in g/mol.",
+    "Deployment": [
+        "Local"
+    ],
+    "Source": "Local",
+    "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Property calculation or prediction",
+    "Input": [
+        "Compound"
+    ],
+    "Input Dimension": 1,
+    "Output": [
+        "Value"
+    ],
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
+    "Interpretation": "Calculated molecular weight (g/mol)",
+    "Tag": [
+        "Molecular weight"
+    ],
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Any"
+    ],
+    "Publication Type": "Other",
+    "Publication Year": 2010,
+    "Publication": "https://www.rdkit.org/docs/RDKit_Book.html",
+    "Source Code": "https://github.com/rdkit/rdkit",
+    "License": "BSD-3-Clause",
+    "Contributor": "miquelduranfrigola",
+    "Incorporation Date": "2021-09-13",
+    "Last Packaging Date": "2025-09-16",
+    "Release": "v1.0.0",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3b5e",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ],
+    "Model Size": 1.0,
+    "Environment Size": 435.0,
+    "Image Size": 477.17,
+    "Computational Performance 1": 26.73,
+    "Computational Performance 2": 16.39,
+    "Computational Performance 3": 16.39,
+    "Computational Performance 4": 18.35,
+    "Computational Performance 5": 27.22
+}
