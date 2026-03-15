@@ -14,7 +14,7 @@ root = os.path.dirname(os.path.abspath(__file__))
 
 # my model
 def molweight(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    return [MolWt(Chem.MolFromSmiles("lll")) for smi in smiles_list]
 
 
 # read SMILES from .csv file, assuming one column with header
