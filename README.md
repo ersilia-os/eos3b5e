@@ -21,7 +21,7 @@ This model was incorporated on 2021-09-13.Last packaged on 2026-02-04.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `2`
+- **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
 - **Interpretation:** Calculated molecular weight (g/mol)
 
