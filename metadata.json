@@ -3,7 +3,7 @@
     "Slug": "molecular-weight",
     "Status": "Ready",
     "Title": "Molecular weight",
-    "Description": "The model is simply an implementation of the function Descriptors.MolWt of the chemoinformatics package RDKIT. It takes as input a small molecule (SMILES) and calculates its molecular weight in g/mol.",
+    "Description": "Calculates molecular weight in g/mol, the most basic descriptor in any triage workflow and a component of Lipinski-style filters. The implementation is a thin wrapper around Descriptors.MolWt from RDKit, applied to a SMILES input. Nothing is learned or fitted: the value follows deterministically from the atoms present and their standard atomic weights, so results are exact rather than predicted and identical across runs. Salts and counterions, if present in the input string, are counted alongside the parent structure.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 1,
     "Output Consistency": "Fixed",
-    "Interpretation": "Calculated molecular weight (g/mol)",
+    "Interpretation": "Molecular weight of the compound in g/mol.",
     "Tag": [
         "Molecular weight"
     ],
