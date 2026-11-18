@@ -2,7 +2,8 @@
 
 Calculates molecular weight in g/mol, the most basic descriptor in any triage workflow and a component of Lipinski-style filters. The implementation is a thin wrapper around Descriptors.MolWt from RDKit, applied to a SMILES input. Nothing is learned or fitted: the value follows deterministically from the atoms present and their standard atomic weights, so results are exact rather than predicted and identical across runs. Salts and counterions, if present in the input string, are counted alongside the parent structure.
 
-This model was incorporated on 2021-09-13.Last packaged on 2026-02-04.
+This model was incorporated on 2021-09-13.
+Last packaged on 2026-02-04.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3b5e](https://hub.docker.com/r/ersiliaos/eos3b5e)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3b5e.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos3b5e_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos3b5e_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
